@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Green Cater</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css"> -->
+</head>
+<body style="background-color:#ecf5e9;">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-dark bg-success sticky-top">
+<div class="container-fluid">
+	<a class="navbar-brand" href='#'><img src="img/logo75.png"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="#">LOCATIONS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">CATERING</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">PROFILE</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+
+<div class="container-fluid pt-5" style="background-color: #ecf5e9"; align="center">
+<h1>CONTACT</h1>
+</div>
+
+
+<div class="container-fluid pt-5" style="background-color: #ecf5e9">
+<div class="container" style="background-color: #ecf5e9">
+
+<form action="" class="main-form needs-validation" novalidate>
+	<div class="row">
+		<div class="col sm-6">
+			<div class="form-group">
+				<label for="name">First:</label>
+				<input type="text" name="name" id="name" class="form-control is-invalid" placeholder="First" required>
+				<div class="invalid-feedback">*First and Last name are required!</div>
+			</div>
+		</div>
+		<div class="col sm-6">
+			<div class="form-group">
+				<label for="last">Last:</label>
+				<input type="text" name="last" id="last" class="form-control is-invalid"
+				placeholder="Last" required>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col sm-6">
+			<div class="form-group">
+				<label for="phone">Phone:</label>
+				<input type="text" name="phone" id="phone" class="form-control">
+			</div>
+		</div>
+		<div class="col sm-6">
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" class="form-control" required>
+				<div class="invalid-feedback">*Email is required</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-lg-6 col-sm-6 col-xs-6">
+			<div class="form-group">
+				<label for="subject">Subject:</label>
+				<input type="text" name="subject" id="subject" class="form-control  is-invalid" required>
+				<div class="invalid-feedback">*Subject is required</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-sm-12">
+			<div class="form-group">
+				<label for="qna">Comments or Questions:</label>
+				<input type="text" name="qna" id="qna" class="form-control" required>
+			</div>
+		</div>
+	</div>
+		
+		<div class="container-fluid pt-5" style="background-color: #ecf5e9"; align="center">
+		<a href="#" class= "btn btn-light dugme2 btn-lg" style="vertical-align: center;">SUBMIT</a>
+		</div>
+
+
+</form>
+</div>
+</div>
+
+
+<script>
+	var from=focument.querySelector('.needs-validation');
+
+	form.addEventListenter('submit', function(event){
+		if(form.checkValidity() === false){
+			event.preventDefault();
+			event.stopPropagation();
+		}	
+		form.classList.add('was-validated');
+	})
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
